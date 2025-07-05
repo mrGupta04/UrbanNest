@@ -1,0 +1,64 @@
+.userinfo-container {
+    max-width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1E1E2D; /* Darker background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    font-family: 'Montserrat', sans-serif; /* Montserrat font */
+    color: #B3B8CD; /* Light text color */
+}
+
+.userinfo-container h1 {
+    text-align: center;
+    color: #FEBB0B; /* Accent color for heading */
+    margin-bottom: 20px;
+    font-size: 28px;
+    border-bottom: 2px solid #FEBB0B;
+    padding-bottom: 10px;
+}
+
+.userinfo-details {
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.userinfo-details p {
+    margin: 15px 0;
+    padding: 15px;
+    background-color: #2A2A3A; /* Slightly lighter dark background */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.userinfo-details p strong {
+    color: #03BFCB; /* Accent color for labels */
+    font-weight: bold;
+}
+
+.userinfo-details img {
+    display: block;
+    width: 200px; /* Adjust width as needed */
+    height: 200px; /* Ensure height matches width for a perfect circle */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the circle without distortion */
+    margin: 0 auto 20px auto; /* Center the image horizontally and add bottom margin */
+}
+
+@media screen and (max-width: 768px) {
+    .userinfo-container {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .userinfo-details p {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .userinfo-details img {
+        width: 100px; /* Adjust width for smaller screens */
+        height: 130px; /* Ensure height matches width for a perfect circle */
+    }
+}
