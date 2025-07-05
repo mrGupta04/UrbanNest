@@ -1,0 +1,102 @@
+/* Header container styling */
+.headbox {
+    background-color: #ffffff; /* Static white background */
+    padding: 15px 30px; /* Spacing around the header */
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between logo and nav items */
+    align-items: center; /* Center-align items vertically */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Light bottom border */
+}
+
+/* Container for the logo */
+.logo-container {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center the logo vertically */
+    margin-left: 40px; /* Adjust margin if needed */
+}
+
+/* Logo image styling */
+.logo-container img {
+    max-width: 40%; /* Ensure logo is responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Navigation styling */
+nav {
+    display: flex; /* Flexbox for layout */
+    justify-content: flex-end; /* Align navigation to the right */
+    width: auto; /* Use auto width to remove gap */
+    margin-left: 0; /* Remove left margin */
+}
+
+/* Navigation list styling */
+#nav-list {
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Horizontal layout */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+/* Navigation list item styling */
+#nav-list li {
+    margin: 0 20px; /* Space between items */
+    font-weight: bold; /* Make list items bold */
+}
+
+/* Navigation link styling */
+#nav-list a {
+    text-decoration: none; /* Remove underline */
+    color: #333333; /* Dark gray text color */
+    font-size: 16px; /* Font size */
+    font-weight: 500; /* Medium weight text */
+    padding: 10px 20px; /* Padding around the text */
+    border-radius: 5px; /* Slightly rounded button style */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+    display: flex; /* Flexbox for vertical centering */
+    align-items: center; /* Center items vertically */
+    position: relative; /* To use the pseudo-element for underline */
+}
+
+/* Navigation link hover styling */
+#nav-list a:hover {
+    color: red; /* Change text color to red on hover */
+}
+
+/* Underline effect on hover */
+#nav-list a::after {
+    content: ''; /* Empty content for pseudo-element */
+    position: absolute; /* Absolute positioning */
+    left: 0; /* Start from left */
+    bottom: 0; /* Align with bottom of the text */
+    width: 0; /* Start with no width */
+    height: 2px; /* Underline height */
+    background: red; /* Underline color */
+    transition: width 0.3s ease; /* Smooth width transition */
+}
+
+/* Show underline on hover */
+#nav-list a:hover::after {
+    width: 100%; /* Full width underline on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .headbox {
+        flex-direction: column; /* Stack items vertically */
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+        justify-content: center; /* Center-align items horizontally for mobile */
+    }
+
+    nav {
+        justify-content: center; /* Center navigation items horizontally for mobile */
+    }
+
+    #nav-list {
+        flex-direction: column; /* Stack list items vertically */
+        align-items: center; /* Center-align items horizontally */
+    }
+
+    #nav-list li {
+        margin: 10px 0; /* Adjust margin for vertical layout */
+    }
+}
