@@ -1,0 +1,62 @@
+/* Footer container styling */
+.footer-container {
+background-color: rgb(15, 14, 14);  
+    color: #fff; /* White text color for contrast */
+    padding: 40px; /* Increased padding for spacious look */
+    text-align: center; /* Center-align text */
+    position: relative; /* For positioning social icons */
+}
+
+/* Footer content styling */
+.footer-content p {
+    margin: 10px 0; /* Space between paragraphs */
+    font-size: 18px; /* Larger font size */
+    font-family: 'Arial', sans-serif; /* Font family */
+    line-height: 1.5; /* Increased line height for readability */
+}
+
+/* Footer links styling */
+.footer-content a {
+    color: #ffeb3b; /* Bright accent color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Footer links hover styling */
+.footer-content a:hover {
+    color: #ffffff; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Social icons container styling */
+.social-icons {
+    margin-top: 20px; /* Space above social icons */
+}
+
+/* Social icon styling */
+.social-icons a {
+    margin: 0 15px; /* Space between icons */
+    display: inline-block; /* Inline-block for spacing */
+    color: #ffeb3b; /* Bright color for icons */
+    font-size: 24px; /* Larger font size for icons */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transform and color transition */
+}
+
+/* Social icon hover styling */
+.social-icons a:hover {
+    transform: scale(1.2); /* Enlarge icon on hover */
+    color: #ffffff; /* Change icon color on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .footer-content p {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    .social-icons a {
+        font-size: 20px; /* Smaller icon size for mobile */
+        margin: 0 10px; /* Adjust space between icons */
+    }
+}
