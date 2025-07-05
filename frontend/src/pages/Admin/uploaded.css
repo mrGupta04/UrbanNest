@@ -1,0 +1,211 @@
+/* uploaded.css */
+
+/* Container for category buttons */
+.outer-room-uploaded-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+}
+
+/* Container for category buttons */
+.room-category-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* Center the buttons horizontally */
+    margin-bottom: 20px; /* Space below the buttons */
+    flex-wrap: nowrap; /* Prevent buttons from wrapping to the next line */
+    overflow-x: auto; /* Allow horizontal scrolling if buttons overflow */
+}
+
+/* Style for buttons */
+.room-category-list button {
+    background-color: #0105fa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 20px; /* Adjust spacing between buttons */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 50px;
+    width: 150px; /* Fixed height for all buttons */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center text vertically and horizontally */
+}
+
+/* Active button style */
+.room-category-list button.active {
+    background-color: #e74c3c; /* Red color for the active button */
+}
+
+/* Hover effect for buttons */
+.room-category-list button:hover {
+    background-color: #6272cc;
+}
+
+/* Container for room cards */
+.rooms-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Style for room card containers */
+.room-card-container {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    width: 250px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for room card containers */
+.room-card-container:hover {
+    transform: translateY(-5px);
+}
+
+/* Style for room pictures */
+.room-pic-container img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Container for room items */
+.room-items-container {
+    padding: 15px;
+    list-style: none;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Style for list items in room items container */
+.room-items-container li {
+    margin-bottom: 10px;
+}
+
+/* Container for cancel and submit buttons */
+.room-uploaded-cancel-button {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+/* Style for cancel and submit buttons */
+.room-uploaded-cancel-button button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for cancel and submit buttons */
+.room-uploaded-cancel-button button:hover {
+    background-color: #27ae60;
+}
+
+/* UPDATE FORM STYLING */
+
+/* Container for the update form */
+.update-room-form {
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin: 30px auto;
+}
+
+/* Form heading */
+.update-room-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Label styling */
+.update-room-form label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Input and select fields */
+.update-room-form input,
+.update-room-form select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/* Styling for the file input */
+.update-room-form input[type="file"] {
+    border: none;
+    background-color: #f0f0f0;
+}
+
+/* Button styling */
+.update-room-form button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 48%; /* Ensure the buttons are side by side and evenly spaced */
+}
+
+/* Hover effect for buttons */
+.update-room-form button:hover {
+    background-color: #2980b9;
+}
+
+/* Submit and cancel buttons container */
+.update-room-form .buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Button styling for cancel button */
+.update-room-form .buttons-container button[type="button"] {
+    background-color: #e74c3c;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .update-room-form {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .update-room-form .buttons-container button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .update-room-form .buttons-container {
+        flex-direction: column;
+    }
+}
