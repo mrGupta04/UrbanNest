@@ -14,6 +14,23 @@ A full-stack rental listing web application that helps users discover and list a
 **Sept 2024 – Nov 2024**
 
 ---
+## 🖼️ Website Demo Screenshots
+
+Below are some screenshots of the UrbanNest website:
+
+### 🏠 Home Page
+![Home](https://raw.githubusercontent.com/mrGupta04/UrbanNest/main/Demopics/Screenshot%202025-07-05%20161728.png)
+
+### 🔍 Search Page
+![Search](https://raw.githubusercontent.com/mrGupta04/UrbanNest/main/Demopics/Screenshot%202025-07-05%20161844.png)
+
+### 📄 Room Details
+![Details](https://raw.githubusercontent.com/mrGupta04/UrbanNest/main/Demopics/Screenshot%202025-07-05%20162233.png)
+
+### 👤 Login Page
+![Login](https://raw.githubusercontent.com/mrGupta04/UrbanNest/main/Demopics/Screenshot%202025-07-05%20162113.png)
+
+
 
 ## ✨ Features
 
