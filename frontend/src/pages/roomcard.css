@@ -1,0 +1,115 @@
+/* Container for room cards grid layout */
+.roomcard-container {
+    display: flex;               /* Flexbox for layout */
+    flex-wrap: wrap;             /* Wrap to next line if needed */
+    flex-direction: row;         /* Align cards horizontally */
+    justify-content: space-between; /* Evenly space out cards */
+    gap: 20px;                   /* Gap between cards */
+    margin: 40px 0;              /* More generous margin */
+    padding: 0 20px;             /* Padding around the container */
+}
+
+/* Styling for individual room cards */
+.roomcard {
+    background-color: #524b80;   /* Dark, modern theme background */
+    border: 1px solid black;   /* Border for contrast */
+    border-radius: 15px;         /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Strong shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animations */
+    display: flex;               /* Flexbox for two-column layout */
+    flex-direction: row;         /* Align image and details side-by-side */
+    align-items: center;         /* Center content vertically */
+    width: 100%;                 /* Full width */
+    max-width: 1200px;           /* Optional max-width for room cards */
+    margin-bottom: 40px;         /* Margin below cards */
+    padding: 20px;               /* Padding inside the card */
+    gap: 20px;                   /* Space between image and details */
+    cursor: pointer;             /* Cursor pointer for interactivity */
+}
+
+/* Add a hover effect for the room cards */
+.roomcard:hover {
+    transform: scale(1.02);      /* Slight zoom on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6); /* Stronger shadow on hover */
+}
+
+/* Room image styling */
+.roomcard img {
+    width: 30%;                  /* Image takes up 30% of the card width */
+    height: 220px;               /* Slightly taller fixed height */
+    object-fit: cover;           /* Cover image to maintain aspect ratio */
+    border-radius: 12px;         /* Rounded corners for image */
+    transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+}
+
+/* Zoom effect on image hover */
+.roomcard:hover img {
+    transform: scale(1.02);       /* Zoom in on the image */
+}
+
+/* Room details styling */
+.room-details {
+    width: 70%;                  /* Room details take up 70% of the card */
+    display: flex;
+    flex-direction: column;      /* Column layout for details */
+    justify-content: space-between; /* Spread details evenly */
+    padding-left: 20px;          /* Padding between image and text */
+}
+
+/* Room details section with light text */
+.room-details p {
+    margin: 12px 0;              /* Margin for paragraphs */
+    font-size: 18px;             /* Slightly larger font size */
+    color:white;              /* Light text color */
+    font-weight: 300;            /* Light font weight for elegance */
+}
+
+/* Headings inside the room details */
+.room-details h3 {
+    font-size: 22px;             /* Larger heading size */
+    font-weight: 500;            /* Medium font weight */
+    color: #f39c12;              /* Attractive accent color for headings */
+}
+
+/* Book button container */
+.room_booking_button {
+    margin-top: 20px;            /* Margin above the button */
+    text-align: left;            /* Align button to the left */
+}
+
+/* Book button styling */
+.room_booking_button button {
+    background-color: #1a32b7;   /* Red background for the button */
+    color: white;                /* White text color */
+    padding: 12px 24px;          /* Padding inside the button */
+    border: none;                /* No border */
+    border-radius: 50px;         /* Fully rounded button for modern look */
+    font-size: 16px;             /* Font size for button text */
+    cursor: pointer;             /* Pointer cursor */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover */
+    box-shadow: 0 4px 10px rgba(231, 76, 60, 0.5); /* Soft shadow for button */
+}
+
+/* Hover effect for the book button */
+.room_booking_button button:hover {
+    background-color: #c0392b;   /* Darker red on hover */
+    transform: translateY(-4px); /* Slight upward movement on hover */
+    box-shadow: 0 6px 15px rgba(231, 76, 60, 0.8); /* Stronger shadow on hover */
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .roomcard {
+        flex-direction: column;  /* Stack image and details vertically on mobile */
+    }
+
+    .roomcard img {
+        width: 100%;             /* Image takes full width on mobile */
+        height: auto;            /* Let the image resize automatically */
+    }
+
+    .room-details {
+        width: 100%;             /* Room details take full width on mobile */
+        padding-left: 0;         /* Remove left padding on mobile */
+    }
+}

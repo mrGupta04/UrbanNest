@@ -1,0 +1,91 @@
+/* Feedback.css */
+
+.feedback-container {
+  width: 1400px;
+    background-color:darkslateblue;
+    height:400px;
+    margin: 30px ;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    margin-bottom: 20px;
+  }
+  
+  .feedback-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; /* Aligns the two feedback cards */
+  }
+  
+  .feedback-item {
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    align-items: center;
+    flex-basis: 45%; /* Each feedback takes about half the container width */
+    max-width: 600px; 
+    height: 230px;
+    /* Max width for the feedback card */
+  }
+  
+  .feedback-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .profile-pic img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .feedback-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .feedback-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .feedback-username {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .feedback-rating {
+    display: flex;
+  }
+  
+  .star {
+    font-size: 20px;
+    color: #ddd;
+  }
+  
+  .star.filled {
+    color: #ffd700; /* Gold color for filled stars */
+  }
+  
+  .feedback-message {
+    font-size: 14px;
+    color: #555;
+    font-family: 'Montserrat', sans-serif;
+  }
+  

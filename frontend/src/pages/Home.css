@@ -1,0 +1,238 @@
+.mainhome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0; /* Background color for contrast */
+    min-height: 100vh; /* Covers full viewport height */
+}
+
+/* Upper section */
+.upper_section {
+    width: 100%;
+    background-image: url('/public/images/pic1.png');
+    padding: 80px 0; /* Enough padding for content */
+    background-size: cover; /* Ensures the background image covers the section */
+    background-position: center; /* Center the background image */
+}
+
+/* Subheading text */
+#subheading_text {
+    font-size: 40px; /* Font size */
+    font-weight: bold; /* Make the text bold */
+    color: #464bdb; /* Desired text color */
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Space above the text */
+    padding: 10px 20px; /* Padding for better readability */
+    border-radius: 10px; /* Optional rounded corners */
+}
+
+/* Room categories layout */
+.roompgflat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px; /* Space between items */
+    flex-wrap: wrap; /* Ensures responsiveness */
+    margin-top: 120px; /* Smooth spacing from upper section */
+}
+
+/* Individual category cards */
+.roompgflat > div {
+    background: #fff; /* Background color */
+    border: 1px solid #ddd; /* Border for cards */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Inner spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    text-align: center; /* Center text */
+    width: 200px; /* Fixed width for cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effects */
+    position: relative; /* Positioning context */
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Hover effects for category cards */
+.roompgflat > div:hover {
+    transform: translateY(-10px); /* Lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Images inside category cards */
+.roompgflat img {
+    width: 100%; /* Full width */
+    height: 150px; /* Fixed height */
+    object-fit: cover; /* Cover the container */
+    border-radius: 4px; /* Rounded corners */
+    transition: opacity 0.3s ease; /* Smooth transition for images */
+}
+
+/* Opacity change on image hover */
+.roompgflat > div:hover img {
+    opacity: 0.9; /* Slight opacity change on hover */
+}
+
+/* Search bar container */
+.search-bar-container {
+    width: 100%; /* Full width */
+    display: flex;
+    justify-content: center; /* Center search bar */
+    margin: 20px 0; /* Margin around search bar */
+}
+
+/* Search bar styling */
+.search-bar-simple {
+    display: flex; /* Flexbox for search bar */
+    align-items: center; /* Center vertically */
+    max-width: 500px; /* Max width */
+    width: 100%; /* Full width */
+    border: 1px solid #ddd; /* Border */
+    border-radius: 30px; /* Rounded corners */
+    overflow: hidden; /* Prevent overflow */
+    background-color: #f5f5f5; /* Background color */
+}
+
+/* Input field styling */
+.search-bar-simple input {
+    flex-grow: 1; /* Fill remaining space */
+    border: none; /* Remove border */
+    font-size: 16px; /* Font size */
+    border-radius: 30px 0 0 30px; /* Rounded left corners */
+    outline: none; /* Remove outline */
+    background-color: #f5f5f5; /* Input background */
+    color: #333; /* Input text color */
+    padding: 10px 20px; /* Inner padding */
+}
+
+/* Placeholder color */
+.search-bar-simple input::placeholder {
+    color: #dc3131; /* Placeholder text color */
+}
+
+/* Search button styling */
+.search-bar-simple button {
+    background-color: #5b43f0; /* Button background */
+    border: none; /* Remove border */
+    width: 80px; /* Fixed width */
+    border-radius: 0 30px 30px 0; /* Rounded right corners */
+    cursor: pointer; /* Pointer cursor */
+    color: white; /* Button text color */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s ease; /* Button hover transition */
+}
+
+/* Button hover effect */
+.search-bar-simple button:hover {
+    background-color: #3328a6; /* Darker background on hover */
+}
+
+/* Room list container */
+.roomlist {
+    margin-top: 30px; /* Space above room list */
+}
+
+/* Room heading */
+#roomheading {
+    font-size: 24px; /* Font size */
+    margin-bottom: 20px; /* Space below */
+    text-align: center; /* Center text */
+    color: #333; /* Text color */
+    font-family: 'Montserrat', sans-serif; /* Font family */
+}
+
+/* Room picture layout */
+.roompic {
+    display: flex; /* Flexbox layout */
+    flex-wrap: wrap; /* Wrap items */
+    gap: 20px; /* Space between pictures */
+    justify-content: center; /* Center pictures */
+}
+
+/* Other sections */
+.other-section {
+    padding: 20px; /* Inner padding */
+    background-color: #f9f9f9; /* Background color */
+    text-align: center; /* Center text */
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 30px; /* Space above */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    width: 100%; /* Full width */
+}
+
+/* Text inside other sections */
+.other-section p {
+    font-size: 18px; /* Font size */
+    color: #333; /* Text color */
+    margin-bottom: 20px; /* Space below */
+    font-family: 'Montserrat', sans-serif; /* Font family */
+}
+
+/* Other section categories layout */
+.other-section-category {
+    display: flex; /* Flexbox layout */
+    justify-content: space-around; /* Space between items */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Wrap items */
+}
+
+/* Individual category cards in other sections */
+.other-section-category div {
+    background-color: #ffffff; /* Background color */
+    padding: 15px 30px; /* Inner padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: transform 0.3s ease-in-out; /* Transition for hover effect */
+    font-family: 'Montserrat', sans-serif; /* Font family */
+    font-size: 16px; /* Font size */
+    color: #555; /* Text color */
+    margin: 10px; /* Margin */
+    cursor: pointer; /* Pointer cursor */
+}
+
+/* Hover effect for category cards */
+.other-section-category div:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+    background-color: #f0f0f0; /* Background color change on hover */
+}
+
+/* None class - for empty state padding */
+.none {
+    margin: 20px; /* Margin */
+    padding: 40px; /* Padding */
+}
+
+/* Button styling */
+.button-div-btn {
+    width: 120px; /* Fixed width */
+    background-color: rgb(91, 67, 240); /* Button background */
+    border-radius: 5px; /* Rounded corners */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    padding: 10px; /* Inner padding */
+    border: none; /* Remove border */
+    font-size: 16px; /* Font size */
+    display: inline-block; /* Inline block */
+    cursor: pointer; /* Pointer cursor */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    transition: background-color 0.3s ease; /* Button hover transition */
+}
+
+/* Button hover effect */
+.button-div-btn:hover {
+    background-color: rgb(33, 24, 100); /* Darker background on hover */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .upper_section {
+        padding: 60px 0; /* Adjust padding for smaller screens */
+    }
+
+    .roompgflat {
+        margin-top: 30px; /* Adjust for mobile devices */
+        gap: 20px; /* Reduce gap on mobile */
+    }
+
+    #subheading_text {
+        font-size: 24px; /* Reduce font size on smaller screens */
+        padding: 8px 16px; /* Adjust padding */
+    }
+}

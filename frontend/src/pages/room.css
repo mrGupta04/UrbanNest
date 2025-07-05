@@ -1,0 +1,187 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.mainroom_data_container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Room Section Styling */
+.outerroomdiv {
+    text-align: center;
+}
+
+#roomcont {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.roomcategory {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.roomcategory div {
+    position: relative;
+    width: 30%;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.roomcategory div:hover {
+    transform: scale(1.05);
+}
+
+.roomcategory img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.roomcatogrybutton {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0 0 12px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.roomcatogrybutton:hover {
+    background-color: #0056b3;
+}
+
+.roomcatogrybutton.active {
+    background-color: #28a745;
+}
+
+/* Dropdown Form Styling */
+.wholedropdown-room {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f1f3f5;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-row-room {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.dropdown-section-room {
+    flex: 1 1 22%;
+    min-width: 180px;
+}
+
+.dropdown-section-room label {
+    font-weight: bold;
+    color: #333;
+}
+
+.dropdown-section-room select, 
+.dropdown-section-room input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease;
+}
+
+.dropdown-section-room select:focus, 
+.dropdown-section-room input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.button-row-room {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.button-row-room button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-row-room .cancel-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.button-row-room .cancel-button:hover {
+    background-color: #c82333;
+}
+
+.button-row-room button:hover {
+    background-color: #0056b3;
+}
+
+.button-row-room button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+}
+
+.button-row-room button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Form Data Display */
+.form-data-display {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e9ecef;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    color: #495057;
+}
+
+.form-data-display p {
+    margin: 10px 0;
+}
+
+.modify-button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modify-button:hover {
+    background-color: #138496;
+}

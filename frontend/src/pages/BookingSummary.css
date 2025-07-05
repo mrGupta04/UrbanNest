@@ -1,0 +1,64 @@
+/* Overlay for darkened background, to maintain the dim effect */
+.booking-summary-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark background overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* The modal/card with your previous dark theme styling */
+.booking-summary-card {
+  background-color: #2c3e50; /* Dark background for the card */
+  color: white; /* Ensure text is readable */
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Deeper shadow */
+  text-align: left;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Room details within the summary */
+.summary-room-details p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #ecf0f1; /* Softer white for text */
+}
+
+/* Action buttons */
+.summary-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.summary-close-btn, .summary-pay-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.summary-pay-btn {
+  background-color: #2ecc71;
+}
+
+.summary-close-btn:hover {
+  background-color: #2980b9;
+}
+
+.summary-pay-btn:hover {
+  background-color: #27ae60;
+}

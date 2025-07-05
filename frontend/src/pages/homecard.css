@@ -1,0 +1,45 @@
+.card {
+    width: 300px; /* Adjust the width as needed */
+    height: 300px; /* Total height of the card */
+    border-radius: 12px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    background: #fff; /* White background */
+    position: relative; /* For positioning text over image */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.card-image-container {
+    width: 100%;
+    height: 80%; /* 80% of the card height for the image */
+    padding: 10px; /* Space around the image inside the container */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.card-image {
+    width: 100%;
+    height: 100%; /* Fill the container */
+    object-fit: cover; /* Ensure the image covers the area */
+}
+
+.card-city {
+    height: 20%; /* 20% of the card height for the text */
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    color: #fff; /* White text color */
+    font-size: 16px; /* Font size */
+    font-weight: 600; /* Medium font weight */
+    text-transform: capitalize; /* Capitalize first letter of each word */
+    margin: 0; /* Remove default margin */
+    padding: 0 10px; /* Padding for better readability */
+    text-align: center; /* Center-align text */
+}

@@ -1,0 +1,62 @@
+/* Container styling */
+.contact-container {
+    background-color: #f8f9fa; /* Light background color */
+    color: #333; /* Dark text color */
+    padding: 40px 20px; /* Padding around the container */
+    max-width: 1200px; /* Max width to center content */
+    margin: 0 auto; /* Center align */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center align text */
+}
+
+/* Heading styling */
+.contact-heading {
+    font-size: 36px; /* Larger font size for heading */
+    color: #007bff; /* Primary color */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+/* Description styling */
+.contact-description {
+    font-size: 18px; /* Font size for description */
+    line-height: 1.6; /* Increased line height for readability */
+    color: #555; /* Slightly lighter color for description */
+    margin-bottom: 30px; /* Space below description */
+}
+
+/* Social links container styling */
+.social-links {
+    display: flex;
+    flex-wrap: wrap; /* Wrap links to new lines if needed */
+    justify-content: center; /* Center align links */
+    gap: 20px; /* Space between links */
+}
+
+/* Individual social link styling */
+.social-link {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Dark text color */
+    font-size: 18px; /* Font size */
+    font-weight: bold; /* Bold text */
+    border: 2px solid #007bff; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 20px; /* Padding inside the link */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Social link icon styling */
+.social-link img {
+    width: 24px; /* Width of the icon */
+    height: 24px; /* Height of the icon */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Social link hover styling */
+.social-link:hover {
+    background-color: #007bff; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+    border-color: #007bff; /* Border color on hover */
+}
