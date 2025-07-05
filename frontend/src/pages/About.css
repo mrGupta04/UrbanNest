@@ -1,0 +1,66 @@
+/* Container styling */
+.about-container {
+    background-color: #f5f5f5; /* Light background color */
+    color: #333; /* Dark text color for contrast */
+    padding: 40px 20px; /* Padding around the container */
+    max-width: 1200px; /* Max width to center content */
+    margin: 0 auto; /* Center align */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Heading styling */
+.about-heading {
+    font-size: 36px; /* Larger font size for heading */
+    color: #007bff; /* Primary color */
+    text-align: center; /* Center align heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+/* Subheading styling */
+.about-subheading {
+    font-size: 24px; /* Font size for subheading */
+    color: #555; /* Slightly lighter color for subheading */
+    text-align: center; /* Center align subheading */
+    margin-bottom: 40px; /* Space below subheading */
+}
+
+/* Content section styling */
+.about-content {
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    gap: 30px; /* Space between sections */
+}
+
+/* Individual section styling */
+.about-section {
+    background: #ffffff; /* White background for sections */
+    padding: 20px; /* Padding inside sections */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Section heading styling */
+.section-heading {
+    font-size: 28px; /* Font size for section heading */
+    color: #007bff; /* Primary color */
+    margin-bottom: 15px; /* Space below section heading */
+}
+
+/* Section text styling */
+.section-text {
+    font-size: 18px; /* Font size for section text */
+    line-height: 1.6; /* Increased line height for readability */
+    color: #333; /* Dark text color */
+}
+
+/* Contact link styling */
+.contact-link {
+    color: #007bff; /* Primary color */
+    font-weight: bold; /* Bold text */
+    text-decoration: none; /* Remove underline */
+}
+
+.contact-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
